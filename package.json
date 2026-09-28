@@ -1,0 +1,39 @@
+{
+  "name": "ops-console",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Intentionally vulnerable React demo app with outdated, interlinked dependencies. DO NOT DEPLOY.",
+  "type": "module",
+  "scripts": {
+    "predev": "node scripts/sync-release-notes.mjs",
+    "dev": "vite",
+    "prebuild": "node scripts/sync-release-notes.mjs",
+    "build": "vite build",
+    "preview": "vite preview",
+    "smoke": "node scripts/smoke-test.mjs",
+    "upgrade-matrix": "node scripts/upgrade-matrix.mjs"
+  },
+  "dependencies": {
+    "axios": "0.21.1",
+    "bootstrap": "3.4.0",
+    "crypto-js": "4.1.1",
+    "dompurify": "2.0.12",
+    "jquery": "3.4.1",
+    "lodash": "4.17.15",
+    "marked": "4.0.9",
+    "moment": "2.29.1",
+    "moment-timezone": "0.5.31",
+    "qs": "6.5.2",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "ua-parser-js": "0.7.21",
+    "uuid": "3.4.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "4.0.0",
+    "vite": "4.5.0"
+  },
+  "overrides": {
+    "follow-redirects": "1.14.0"
+  }
+}

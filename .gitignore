@@ -1,0 +1,5 @@
+node_modules
+dist
+public/mock/release-notes.md
+.upgrade-matrix
+smoke-screenshot.png
